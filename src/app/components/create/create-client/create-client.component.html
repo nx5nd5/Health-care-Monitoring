@@ -1,0 +1,49 @@
+<div class="form-container">
+  <h2>Register a patient</h2>
+  <form (ngSubmit)="saveClient()">
+    <label>
+      Mac:
+      <input type="text" [(ngModel)]="client.mac" name="mac" required placeholder="Ex: 00:11:22:33:44:55">
+    </label>
+    <label>
+      First name:
+      <input type="text" [(ngModel)]="client.prenom" name="prenom" required placeholder="Ex: First name">
+    </label>
+    <label>
+      Name:
+      <input type="text" [(ngModel)]="client.nom" name="nom" required placeholder="Ex: Name">
+    </label>
+    <label>
+      Phone number:
+      <input type="text" [(ngModel)]="client.tel" name="tel" required placeholder="Ex: +2126********">
+    </label>
+    <label>
+      Adresse:
+      <input type="text" [(ngModel)]="client.adresse" name="adresse" required placeholder="Ex: Number City Avenue">
+    </label>
+    <label>
+      Email:
+      <input type="email" [(ngModel)]="client.mail" name="mail" required placeholder="Ex: user@example.com">
+    </label>  
+    <label>
+      blood:
+      <input type="text" [(ngModel)]="client.blood" name="blood" required placeholder=" ">
+    </label> 
+    <label>
+      sex:
+      <input type="text" [(ngModel)]="client.sex" name="sex" required placeholder=" female or male">
+    </label> 
+    <label>
+      age:
+      <input type="number" [(ngModel)]="client.age" name="age" required placeholder=" ">
+    </label>
+    <label>
+      weight:
+      <input type="number" [(ngModel)]="client.weight" name="weight" required placeholder=" ">
+    </label>
+    <div class="button-SR">
+      <button type="submit">Submit</button>
+      <button type="return" (click)="returnClicked()">Return</button>
+    </div>
+  </form>
+</div>

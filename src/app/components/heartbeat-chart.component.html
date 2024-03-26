@@ -1,0 +1,13 @@
+<div>
+  <h2>Heartbeat Chart</h2>
+
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate" (dateChange)="dateChanged($event)" placeholder="Select Date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <div>
+    <canvas id="MyChart"></canvas>
+  </div>
+</div>

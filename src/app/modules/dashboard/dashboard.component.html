@@ -1,0 +1,90 @@
+<div class="card">
+
+
+<div class="card-wrapper">
+ 
+    <div class="card-content" style="background-color:#D9D9D9;">
+      <div class="text-content1">
+
+        <h2>Patient Info:</h2>
+        <div class="divpic">
+          <img class="img" src="assets/29.png" alt="profil">
+          <h4>{{ nom }} {{ prenom }}</h4>
+        </div>
+      </div>
+      <div class="goldenbox__content text-content2 first"  >
+        <ul class="goldenbox__content__list ">
+          <li class="goldenbox__content__list__item ">
+            <div class="value">{{ data1 }}</div>
+
+            <div class="subject">Heart Beat</div>
+          </li>
+          <li class="goldenbox__content__list__item ">
+            <div class="value">{{ data2 }}</div>
+
+            <div class="subject">Temperature</div>
+          </li>
+
+        </ul>
+      </div>
+      <div class="text-content2">
+        <ul>
+          <li class="goldenbox__content__list__item ">
+            <div class="value">{{ data3 }}</div>
+
+            <div class="subject">Pression</div>
+          </li>
+          <li class="goldenbox__content__list__item ">
+            <div class="value date">{{ datePrelevement }}</div>
+
+            <div class="subject ">Last control</div>
+          </li>
+        </ul>
+      </div>
+      <div class="text-content2">
+        <ul>
+          <li class="goldenbox__content__list__item ">
+            <div class="value"> {{ blood }}
+            </div>
+
+            <div class="subject">Blood </div>
+          </li>
+          <li class="goldenbox__content__list__item ">
+            <div class="value"> {{Weight}} Kg
+            </div>
+
+            <div class="subject"> Weight </div>
+          </li>
+        </ul>
+      </div>
+      <div class="text-content2">
+        <ul goldenbox__content__list>
+          <li class="goldenbox__content__list__item">
+            <div class="value">{{sex}}
+            </div>
+
+            <div class="subject">Sex </div>
+          </li>
+          <li class="goldenbox__content__list__item ">
+            <div class="value"> {{age}} years old
+            </div>
+
+            <div class="subject">Age </div>
+          </li>
+          
+        </ul>
+      </div>
+
+    </div>
+
+
+</div>
+</div>
+<div class="card">
+<div class="card-content-prime">
+<div class="card-wrapper" style="background-color:#D9D9D9; border-radius:50px;">
+
+  <app-heartbeat-chart></app-heartbeat-chart>
+</div>
+</div>
+</div>
